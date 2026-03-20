@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>SELECT * FROM Rucha</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="Favicon.png">
+
+</head>
+<body>
+
+<header class="site-header">
+  <div class="logo" onclick="location.href='index.html'"><span>BA</span>_FOLIO</div>
+
+  <nav class="nav">
+    <button class="nav-btn active"  onclick="location.href='index.html'">Home</button>
+    <button class="nav-btn"  onclick="location.href='index.html#proj-anchor'">Projects</button>
+    <button class="nav-btn" onclick="location.href='index.html#about-anchor'">About</button>
+    <a class="nav-contact" href="Rucha_Gade_Resume.pdf" target="_blank">Resume</a>
+  </nav>
+</header>
+
+<!-- ═══ HERO ═══ -->
+<section class="home-hero">
+  <div class="hero-left">
+    <p class="hero-eyebrow">// Business Analysis &middot; Data Analytics &middot; Documentation</p>
+    <h1 class="hero-name">Rucha Gade</h1>
+    <p class="hero-role">Clarity, communication, and curiosity—that’s what I bring to the table.</p>
+    <p class="hero-desc">As a Business Analyst fresher, I combine data analysis skills with clear, confident communication to bridge the gap between business and technology. I’m driven to learn fast, adapt quickly, and contribute to solutions that create real impact.</p>
+    <div class="hero-btns">
+      <button class="btn-primary" onclick="document.getElementById('proj-anchor').scrollIntoView({behavior:'smooth'})">View Projects &rarr;</button>
+      <a class="btn-ghost" href="https://www.linkedin.com/in/rucha-gade/" target="_blank">LinkedIn &nearr;</a>
+      <a class="btn-ghost" href="https://github.com/Rucha-1111/"   target="_blank">GitHub &nearr;</a>
+    </div>
+  </div>
+  <div class="hero-terminal">
+    <div class="terminal-bar">
+      <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+      <span class="terminal-title">analyst.py</span>
+    </div>
+    <div class="terminal-body">
+      <div><span class="t-cm"># Business Analyst Profile</span></div>
+      <div>&nbsp;</div>
+      <div><span class="t-kw">class</span> <span class="t-fn">BusinessAnalyst</span>:</div>
+      <div>&nbsp;&nbsp;<span class="t-str">&quot;&quot;&quot; Bridging data &amp; decisions &quot;&quot;&quot;</span></div>
+      <div>&nbsp;</div>
+      <div>&nbsp;&nbsp;skills = [</div>
+      <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-str">&quot;Requirements Analysis&quot;</span>,</div>
+      <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-str">&quot;BABOK &middot; BRD &middot; FRD&quot;</span>,</div>
+      <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-str">&quot;SQL &middot; Python &middot; Pandas&quot;</span>,</div>
+      <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-str">&quot;Stakeholder Management&quot;</span>,</div>
+      <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-str">&quot;Data Visualisation&quot;</span>,</div>
+      <div>&nbsp;&nbsp;]</div>
+      <div>&nbsp;</div>
+      <div>&nbsp;&nbsp;motto = <span class="t-str">&quot;Data tells stories.&quot;</span></div>
+      <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="t-str">&quot;I make them decisions.&quot;</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ STATS ═══ -->
+<div class="wrap">
+  <div class="home-stats">
+    <div class="stat-cell"><div class="num">4</div><div class="lbl">End-to-End Projects</div></div>
+    <div class="stat-cell"><div class="num acc">22.3%</div><div class="lbl">Fraud Rate Uncovered</div></div>
+    <div class="stat-cell"><div class="num">8</div><div class="lbl">BA Docs per Project</div></div>
+    <div class="stat-cell"><div class="num">10K+</div><div class="lbl">Records Analysed</div></div>
+  </div>
+</div>
+
+<!-- ═══ PROJECTS ═══ -->
+<div id="proj-anchor"></div>
+<div class="section-sep" style="margin-top:20px">
+  <h2>// Projects</h2><div class="sep-line"></div>
+  <span class="badge badge-teal">4 Total</span>
+</div>
+<div class="wrap">
+  <div class="proj-cards">
+      <div class="proj-card" onclick="location.href='fraud.html'">
+        <div class="pc-top">
+          <div class="pc-num">01</div>
+          <div class="pc-domain">FinTech · Risk Analytics</div>
+          <div class="pc-title">Bank Loan Fraud Detection</div>
+          <div class="pc-desc">End-to-end fraud detection pipeline across 10,000 loan applications — EDA, classification modelling, and policy recommendations.</div>
+          <div class="pc-tags"><span class="pc-tag">Python</span><span class="pc-tag">Pandas</span><span class="pc-tag">Scikit-learn</span><span class="pc-tag">MySQL</span></div>
+        </div>
+        <div class="pc-bottom">
+          <div class="pc-kpi-row"><div class="pc-kpi"><span class="v">10K</span><span class="l">Applications Analysed</span></div><div class="pc-kpi"><span class="v">22.3%</span><span class="l">Fraud Rate Detected</span></div></div>
+          <span class="pc-status-chip complete">&#10003; Complete</span>
+        </div>
+      </div>
+
+      <div class="proj-card placeholder" >
+        <div class="pc-top">
+          <div class="pc-num">02</div>
+          <div class="pc-domain">E-Commerce · Customer Analytics</div>
+          <div class="pc-title">E-Commerce Customer Churn Analysis</div>
+          <div class="pc-desc">Churn prediction and retention strategy analysis for an online retail platform — cohort analysis, RFM segmentation, and churn modelling.</div>
+          <div class="pc-tags"><span class="pc-tag">Python</span><span class="pc-tag">SQL</span><span class="pc-tag">Tableau</span><span class="pc-tag">BABOK</span></div>
+        </div>
+        <div class="pc-bottom">
+          <div class="pc-kpi-row"><div class="pc-kpi"><span class="v">50K</span><span class="l">Customer Records</span></div><div class="pc-kpi"><span class="v">34%</span><span class="l">Churn Rate Identified</span></div></div>
+          <span class="pc-status-chip wip">Coming Soon</span>
+        </div>
+      </div>
+
+      <div class="proj-card placeholder" >
+        <div class="pc-top">
+          <div class="pc-num">03</div>
+          <div class="pc-domain">Operations · Supply Chain</div>
+          <div class="pc-title">Supply Chain Process Optimisation</div>
+          <div class="pc-desc">End-to-end supply chain bottleneck analysis — process mapping, root cause analysis, and SLA improvement recommendations.</div>
+          <div class="pc-tags"><span class="pc-tag">SQL</span><span class="pc-tag">Excel</span><span class="pc-tag">Power BI</span><span class="pc-tag">BPMN</span></div>
+        </div>
+        <div class="pc-bottom">
+          <div class="pc-kpi-row"><div class="pc-kpi"><span class="v">12</span><span class="l">Process Steps Mapped</span></div><div class="pc-kpi"><span class="v">3</span><span class="l">Bottlenecks Identified</span></div></div>
+          <span class="pc-status-chip wip">Coming Soon</span>
+        </div>
+      </div>
+
+      <div class="proj-card placeholder" >
+        <div class="pc-top">
+          <div class="pc-num">04</div>
+          <div class="pc-domain">HR Analytics · People Ops</div>
+          <div class="pc-title">HR Attrition & Workforce Analytics</div>
+          <div class="pc-desc">People analytics dashboard identifying attrition drivers — compensation analysis, tenure patterns, and department-level risk scoring.</div>
+          <div class="pc-tags"><span class="pc-tag">Python</span><span class="pc-tag">Pandas</span><span class="pc-tag">Power BI</span><span class="pc-tag">SQL</span></div>
+        </div>
+        <div class="pc-bottom">
+          <div class="pc-kpi-row"><div class="pc-kpi"><span class="v">1,470</span><span class="l">Employee Records</span></div><div class="pc-kpi"><span class="v">16.1%</span><span class="l">Attrition Rate</span></div></div>
+          <span class="pc-status-chip wip">Coming Soon</span>
+        </div>
+      </div></div>
+</div>
+
+<!-- ═══ SKILLS ═══ -->
+<div class="section-sep"><h2>// Core Competencies</h2><div class="sep-line"></div></div>
+<div class="wrap" style="margin-bottom:80px">
+  <div class="skills-grid" id="homeSkills"></div>
+</div>
+
+<!-- ═══ ABOUT ═══ -->
+<div id="about-anchor"></div>
+<div class="section-sep"><h2>// About</h2><div class="sep-line"></div></div>
+<div class="wrap" style="padding-bottom:100px">
+  <div class="about-grid">
+    <div class="about-text">
+      <h3>Hello, I&rsquo;m Rucha.</h3>
+      <p>Final-year student. Two months from graduating. Already thinking like a BA.
+I've built real projects — not assignments. Written BRDs, dug through messy datasets, built models, and turned all of it into something a stakeholder can actually read. I work in Python and SQL the same way I work in documentation — structured, clean, and with a clear purpose.</p>
+      <p>I don't just analyse data. I ask why it matters, who it affects, and what should change because of it. That's the part most analysts skip. I don't.
+Currently looking for BA and data analyst roles. If you want someone who gets both the business and the data — I'm right here.</p>
+      <div class="about-links">
+        <a class="about-link" href="mailto:ruchagade20@gmail.com">&ensp;&#9993;&ensp; Email</a>
+        <a class="about-link" href="https://www.linkedin.com/in/rucha-gade/" target="_blank">in LinkedIn</a>
+        <a class="about-link" href="https://github.com/Rucha-1111/"   target="_blank">&#9675; GitHub</a>
+      </div>
+    </div>
+    <div class="about-skills">
+      <h4>// Skill Stack</h4>
+      <div class="skills-grid" id="aboutSkills"></div>
+    </div>
+  </div>
+</div>
+
+<script src="scripts.js"></script>
+<script>
+  renderSkills(['homeSkills','aboutSkills']);
+  // Scroll to anchor if URL has hash
+  if(location.hash) {
+    setTimeout(()=>{
+      const el = document.getElementById(location.hash.slice(1));
+      if(el) el.scrollIntoView({behavior:'smooth'});
+    }, 100);
+  }
+</script>
+</body>
+</html>
